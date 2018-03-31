@@ -5,7 +5,6 @@ module Api
 
       def authenticate
         command = AuthenticateUser.call(params[:email], params[:password])
-        print 'user: ', current_user
         if command.success?
           user = User.find_by_email(params[:email])
           render json: { auth_token: command.result, user: user.to_json(only: [:id, :name, :email]) }

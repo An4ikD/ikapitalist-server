@@ -5,4 +5,11 @@ Rails.application.routes.draw do
 
   post 'api/v1/authenticate', to: 'api/v1/authentication#authenticate'
   post 'api/v1/register', to: 'api/v1/registration#register'
+
+  namespace :api do
+    namespace :v1 do
+      resources :projects
+    end
+  end
+  
 end
