@@ -3,7 +3,6 @@ module Api
     class ProjectsController < ApiController
 
       def index
-        print current_user.email
         @projects = Project.all
         render json: @projects
       end

@@ -1,0 +1,1 @@
+Rails.configuration.USER_ROLES = ['guest', 'investor', 'approved investor', 'businessman'].freeze
