@@ -29,6 +29,6 @@ class Ability
     # See the wiki for details:
     # https://github.com/CanCanCommunity/cancancan/wiki/Defining-Abilities
 
-    can :read, Project if user.is_investor?
+    can :read, :all
   end
 end
