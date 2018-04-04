@@ -1,4 +1,5 @@
 class ApiController < ActionController::API
+  include CanCan::ControllerAdditions
   before_action :authenticate_request
   
   attr_reader :current_user

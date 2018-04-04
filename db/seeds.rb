@@ -8,9 +8,29 @@
 #AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
 
 Project.create!([
-  {name: 'DOQ.kz'},
-  {name: 'iDoctor'},
-  {name: 'docdoc'},
-  {name: 'chocodoc'},
-  {name: 'dodoc'},
+  {
+    name: 'DOQ.kz',
+    short_description: 'Short description',
+    description: 'Full description with documentation. Contains price, user, dates and company information'
+  },
+  {
+    name: 'iDoctor',
+    short_description: 'Short description',
+    description: 'Full description with documentation. Contains price, user, dates and company information'
+  },
+  {
+    name: 'docdoc',
+    short_description: 'Short description',
+    description: 'Full description with documentation. Contains price, user, dates and company information'
+  },
+  {
+    name: 'chocodoc',
+    short_description: 'Short description',
+    description: 'Full description with documentation. Contains price, user, dates and company information'
+  },
+  {
+    name: 'dodoc',
+    short_description: 'Short description',
+    description: 'Full description with documentation. Contains price, user, dates and company information'
+  },
 ])
