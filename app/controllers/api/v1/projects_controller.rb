@@ -1,7 +1,7 @@
 module Api
   module V1
     class ProjectsController < ApiController
-      load_and_authorize_resource
+      #load_and_authorize_resource
 
       def index
         @projects = Project.all
